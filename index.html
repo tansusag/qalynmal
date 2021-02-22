@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Qalyn Mal Calculator</h1>
+    <h3>Стартовая сумма 500$. Ответьте на вопросы и получите сумму калыма </h3>
+    <hr>
+<section id="Ed" class="container">
+ <section id="dropdown">
+    <form>
+    <label for="education">Образование:</label>
+    <br>
+        <select name="education" id="education">
+          <option value="blank"></option>
+          <option name="edu" value="1.5" >Бакалавриат</option>
+          <option name="edu" value="1.2" >Средне-специальное</option>
+          <option name="edu" value="1.05" >11 классов школы</option>
+          <option name="edu" value="0.9" >9 классов школы</option>
+        </select>
+        <br><br>
+</section>
+<section id="dropdown2">
+    <label for="family">Благосостояние семьи:</label>
+    <br>
+        <select name="networth" id="networth">
+          <option value="blank"></option>
+          <option value="2"> Более 100,000$</option>
+          <option value="1.5">50,000$ - 100,000$</option>
+          <option value="1.2"> Менее 50,000$</option>
+        </select>
+        <br><br>
+</section>
+<section id= "skills">
+    <label for="skills">Навыки:</label>
+    <br>
+    <input type="checkbox" name="skills" id="skill1" value="200"> Умение хорошо готовить  <br>
+    <input type="checkbox" name="skills" id="skill2" value="100"> Игра на домбре<br>
+    <input type="checkbox" name="skills" id="skill3" value="150"> Легкий характер<br>
+    <input type="checkbox" name="skills" id="skill4" value="100"> Умение петь
+    <br><br>
+</section>
+<section id="age">
+    <label for="age">Возраст:</label><br>
+    <input type="radio" name="age" value="1.5" > 18-23<br>
+    <input type="radio" name="age" value="1.2"> 24-27<br>
+    <input type="radio" name= "age" value="0.95"> 28+
+    <br><br>
+</section>
+<section id= "gossip">
+    <label for="gossip">Слухи и разговоры:</label>
+    <br>
+    <input type="checkbox" name="gossip" value="0.85"> Слухи о семье <br>
+    <input type="checkbox" name="gossip" value="0.9"> Слухи о тяжелом характере<br>
+    <input type="checkbox" name="gossip" value="200">  Слухи о поведении
+    <br><br>
+</section>
+</form>
+<button id="submit" type="button" class="btn"> Высчитать</button>
+<section id="total">
+
+    <div id="price">
+        <small id="each"> Сумма калыма:</small>
+        <span id="priceTotal">500$</span>
+        </div>
+
+</section>
+</section>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
